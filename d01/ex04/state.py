@@ -13,24 +13,14 @@ def state_name(capital):
 		"NJ": "Trenton",
 		"CO": "Denver"
 	}
-	# for city in capital_cities:
-	# 	if capital_cities[city] == capital:
-	# 		for state in states:
-	# 			if city == states[state]:
-	# 				print (state)
-					
-	# if capital_cities[capital] in capital_cities:
-	# 	print (capital_cities[capital])
-		# for state in states:
-		# 	if capital_cities[city] == states[state]:
-		# 		print (state)
-	# else:
-		# print ('Unknown capital city')
-	# print (capital_cities[capital] )
-	# if capital_cities[capital] in capital_cities:
-	# 	print (states[])
-	# else:
-		# print ('Unknown capital city')
+	if capital in capital_cities.values():
+		for k, v in capital_cities.items():
+			if v == capital:
+				for k2, v2 in states.items():
+					if k == v2:
+						print (k2)
+	else:
+		print ('Unknown capital city')
 
 if __name__ == '__main__':
 	if len(sys.argv) == 2:
