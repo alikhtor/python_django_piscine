@@ -22,4 +22,4 @@ if __name__=='__main__':
 		ft_extension(sys.argv[1])
 		ft_create_cv(sys.argv[1]) 
 	except Exception as e:
-		print (e) 
+		print (e)
